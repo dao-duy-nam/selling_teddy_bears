@@ -14,7 +14,8 @@ return new class extends Migration
         Schema::create('categories', function (Blueprint $table) {
             $table->id();
             $table->string('name');  // Tên danh mục
-            $table->text('description')->nullable();  // Mô tả danh mục
+            $table->text('description')->nullable();
+            $table->softDeletes();  
             $table->timestamps();
         });
     }

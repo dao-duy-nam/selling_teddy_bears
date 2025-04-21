@@ -16,7 +16,8 @@ return new class extends Migration
             $table->foreignId('user_id')->constrained()->onDelete('cascade');  // Khóa ngoại đến bảng users
             $table->string('status');  // Trạng thái đơn hàng (pending, completed, cancelled...)
             $table->decimal('total_price', 8, 2);  // Tổng giá trị đơn hàng
-            $table->text('shipping_address');  // Địa chỉ giao hàng
+            $table->text('shipping_address');
+            $table->softDeletes();  // Địa chỉ giao hàng
             $table->timestamps();
         });
     }

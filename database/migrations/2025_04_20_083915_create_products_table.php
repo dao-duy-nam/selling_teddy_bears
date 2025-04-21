@@ -18,7 +18,8 @@ return new class extends Migration
             $table->text('description');  // Mô tả sản phẩm
             $table->decimal('price', 8, 2);  // Giá sản phẩm
             $table->integer('stock_quantity');  // Số lượng tồn kho
-            $table->string('image')->nullable();  // Hình ảnh sản phẩm
+            $table->string('image')->nullable();
+            $table->softDeletes();  // Hình ảnh sản phẩm
             $table->timestamps();
         });
     }
