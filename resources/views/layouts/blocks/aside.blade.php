@@ -57,7 +57,12 @@
                 <div data-i18n="Dashboards">Dashboards</div>
             </a>
         </li>
-
+        <li class="menu-item">
+            <a href="app-email.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                <div data-i18n="Dashboards">Dashboards</div>
+            </a>
+        </li>
         <!-- Quản lý danh mục -->
         <li class="menu-item">
             <a href="{{ route('admin.categories.index') }}" class="menu-link">
